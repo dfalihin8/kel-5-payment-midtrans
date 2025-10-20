@@ -38,12 +38,7 @@ class PaymentController extends Controller
             ],
         ];
 
-        if ($request->payment_type === 'bank_transfer') {
-            $payload['payment_type'] = 'bank_transfer';
-            $payload['bank_transfer'] = [
-                'bank' => 'bca',
-            ];
-        } elseif ($request->payment_type === 'gopay') {
+        if ($request->payment_type === 'gopay') {
             $payload['payment_type'] = 'gopay';
         }
 
