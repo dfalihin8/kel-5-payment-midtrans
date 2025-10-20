@@ -30,7 +30,7 @@
     .pay-link:hover { background: #e0e7ff; }
   </style>
 
-  <!-- QRCode.js untuk generate QR di frontend -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 <body>
