@@ -11,7 +11,7 @@ class PaymentController extends Controller
 {
     public function index()
     {
-        return view('payment'); // Pastikan view ini ada di resources/views/payment.blade.php
+        return view('payment'); 
     }
 
     public function process(Request $request)
@@ -23,7 +23,7 @@ class PaymentController extends Controller
             'payment_type' => 'required|string|in:bank_transfer,gopay',
         ]);
 
-        $serverKey = config('services.midtrans.server_key'); // Pastikan sudah di set di .env dan config/services.php
+        $serverKey = config('services.midtrans.server_key'); 
 
         $orderId = 'ORDER-' . Str::uuid();
 
